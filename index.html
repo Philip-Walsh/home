@@ -4,13 +4,14 @@
    	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 		<meta name="viewport" content="initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../style/home.css" />
   	<title>Home Page</title>
-    <link href="base-style.css" rel="stylesheet" type="text/css" />
  </head>
  <body>
     	<header>
-        <h1>WELCOME</h1>
+				<h1>WELCOME</h1>
+					<a href="https://github.com/Philip-Walsh/home"><img src="../images/key.png"/ alt=""></a>
+
       </header>
       <nav>
         <ul>
@@ -20,8 +21,8 @@
           <li><a href="pyprojects/send-datetime.py">python projects</a></li>
         </ul>
     	</nav>
-      <aside>
-        <h1>Links</h1>
+
+			<aside>
         <ul>
           <li><a href="lec06/toppings.html">Choose my favorite toppings?</a></li>
           <li><a href="lec06/colour.html">Can you guess my favorite Color?</a></li>
@@ -40,24 +41,48 @@
         </ul>
       </aside>
       <main>
-				<section>
-          <form action="https://www.google.com/search" method="get">
-            <label for="search">Google search </label>
-            <input type="text" name="q" id="search" />
-            <input type="submit" name="q" id="search" />
-          </form>
-          <form action="https://www.imbd.com/find" method="get">
-            <label for="search">MovieMe: </label>
-            <input type="text" name="q" id="search" />
-            <input type="submit"/>
-          </form>
-        </section>
+				<article>
 
-        <section>
-          <a href="https://repl.it/@PhilipW2020/www"><progress value="100" max="100"></progress></a>
-       		<a href="https://repl.it/@PhilipW2020"><progress value="70" max="100"></progress></a>
-          <a href="http://www.cs.ucc.ie/~dgb/"> 		<progress value="50" max="100"></progress></a>
-        </section>
+					<form action="lec06/colour.py" method="get"><!---->
+						<label for="color">Guess my favorite colour</label>
+						<input type="color" id="favcolor" name="favcolor" value=""/>
+						<input type="submit" value="Guess" />
+					</form>
+				</article>
+
+				<article>
+          <form action="https://duckduckgo.com" method="get">
+            <label for="search">Oogle</label>
+            <input type="text" name="q" id="search" placeholder="" size="25" maxlength="20"/>
+            <input type="submit" name="q" id="Google Search" />
+          </form>
+				</article>
+				<article>
+          <form action="https://www.imbd.com/find" method="get">
+            <label for="search" >Movies </label>
+            <input type="text" name="q" id="search" placeholder="Pulp Fiction" size="25" maxlength="20"/>
+            <input type="submit" value="movie"/>
+          </form>
+        </article>
+				<article>
+          <form action="https://www.imbd.com/find" method="get">
+            <label for="search" >Movies </label>
+            <input type="text" name="q" id="search" placeholder="Pulp Fiction" size="25" maxlength="20"/>
+            <input type="submit" value="movie"/>
+          </form>
+        </article>
+				<article>
+          <form action="https://www.imbd.com/find" method="get">
+            <label for="search" >Movies </label>
+            <input type="text" name="q" id="search" placeholder="Pulp Fiction" size="25" maxlength="20"/>
+            <input type="submit" value="movie"/>
+          </form>
+        </article>
+
+        <a href="https://repl.it/@PhilipW2020/www"><progress value="100" max="100"></progress></a>
+     		<a href="https://repl.it/@PhilipW2020"><progress value="70" max="100"></progress></a>
+        <a href="http://www.cs.ucc.ie/~dgb/"> 		<progress value="50" max="100"></progress></a>
+
       </main>
       <footer> &#169;Philip Walsh </footer>
       <script src="script.js"></script>
